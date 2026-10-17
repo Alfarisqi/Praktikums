@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f1f6fc;
+            margin: 20px; }
+
+        h1 {
+            color: #2457a7;
+            text-align: center; }
+
+        h2 {
+            color: #2457a7; }
+
+        .formulir {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px; }
+
+        label {
+            display: block;
+            margin-top: 10px; }
+
+        input[type="text"],
+        input[type="email"],
+        select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box; }
+
+        button {
+            background: #2457a7;
+            color: white;
+            border: none;
+            padding: 9px 16px;
+            margin-top: 12px;
+            cursor: pointer;}
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white; }
+
+        caption {
+            font-weight: bold;
+            padding: 10px;}
+
+        th {
+            background: #2457a7;
+            color: white; }
+
+        th, td {
+            border: 1px solid #b9c9df;
+            padding: 9px;
+            text-align: left;}
+
+        .aktif {
+            background: #e3edfa; }
+    </style>
+</head>
+    <body>
+ <h1>Data Mahasiswa</h1>
+ <div class="formulir">
+ <h2>Formulir Mahasiswa</h2>
+    <form action="proses.php" method="post">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Nama mahasiswa" required>
+
+            <label for="nim">NIM</label>
+            <input type="text" id="nim" name="nim"
+                   placeholder="Nomor induk mahasiswa" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+                   placeholder="nama@email.com" required>
+
+            <label>Jenis Kelamin</label>
+            <input type="radio" name="jk" value="L" required> Laki-laki
+            <input type="radio" name="jk" value="P"> Perempuan
+
+            <label for="jurusan">Program Studi</label>
+            <select id="jurusan" name="jurusan">
+                <option>Informatika</option>
+                <option>Teknologi Informasi</option>
+                <option>Sistem Informasi</option>
+                <option>Teknik Sipil</option>
+                <option>Manajemen</option>
+            </select>
+
+            <label>Hobi</label>
+            <input type="checkbox" name="Hobi" value="Olahraga"> Olahraga
+            <input type="checkbox" name="Hobi" value="Gaming"> Gaming
+            <input type="checkbox" name="Hobi" value="Mendengarkan Musik"> Mendengarkan Musik
+
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" rows="3"></textarea>
+
+            <button type="submit">Simpan</button>
+            <button type="reset">Ulangi</button>
+    </form>
+    </div>
+ <h2>Daftar Mahasiswa</h2>
+    <table>
+        <caption>Data Mahasiswa Terdaftar</caption>
+        <tr>
+            <th colspan="4">Informasi Akademik</th> 
+        </tr>
+        <tr>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Prodi</th>
+            <th>IPK</th>
+        </tr>
+
+        <tr class="aktif">
+            <td>21010</td>
+            <td>Muhammad Alfa Risqi</td>
+            <td>Teknologi Informasi</td>
+            <td>4.00</td>
+        </tr>
+        <tr>
+            <td>28370</td>
+            <td>Budi Santoso</td>
+            <td>Teknik Sipil</td>
+            <td>3.90</td>
+        </tr>
+        <tr class="aktif">
+            <td>43890</td>
+            <td>Classdio</td>
+            <td>Manajemen</td>
+            <td>3.60</td>
+        </tr>
+        <tr>
+            <td>22231</td>
+            <td>Febri Tohpati</td>
+            <td>Informatika</td>
+            <td>3.50</td>
+        </tr>
+        <tr class="aktif">
+            <td>23005</td>
+            <td>Rafly Mahendra</td>
+            <td>Sistem Informasi</td>
+            <td>3.60</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Total: 5 mahasiswa</td>
+        </tr>
+        </table>
+    </body>
+</html>
