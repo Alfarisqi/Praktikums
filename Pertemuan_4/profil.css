@@ -1,7 +1,9 @@
+/* Mengatur ukuran semua elemen */
 * {
     box-sizing: border-box;
 }
 
+/* Selector elemen: mengatur tampilan halaman */
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f5f9;
@@ -10,6 +12,7 @@ body {
     line-height: 1.6;
 }
 
+/* Selector ID: mengatur kotak utama profil */
 #profil {
     width: 400px;
     margin: 40px auto;
@@ -20,33 +23,40 @@ body {
     text-align: center;
 }
 
+/* Selector grup: mengatur judul */
 h1, h3 {
     color: #1e3a8a;
 }
 
+/* Mengatur ukuran judul utama */
 h1 {
     font-size: 28px;
 }
 
+/* Selector class: mengatur nama */
 .nama {
     color: rgb(37, 99, 235);
     font-size: 22px;
 }
 
+/* Mengatur tulisan jurusan */
 .jurusan {
     color: #64748b;
     text-transform: uppercase;
     font-size: 13px;
 }
 
+/* Selector turunan: mengatur paragraf di dalam profil */
 #profil p {
     line-height: 1.6;
 }
 
+/* Mengatur deskripsi diri */
 .deskripsi {
     text-align: justify;
 }
 
+/* Mengatur label keahlian */
 .keahlian {
     display: inline-block;
     margin: 4px;
@@ -57,6 +67,7 @@ h1 {
     border-radius: 6px;
 }
 
+/* Mengatur tombol kontak */
 .tombol {
     display: inline-block;
     margin-top: 20px;
@@ -67,12 +78,13 @@ h1 {
     border-radius: 6px;
 }
 
+/* Mengatur foto profil menjadi lingkaran */
 .foto-profil {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #2563eb;
+    border: 3px solid #2563eb;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto;
 }
