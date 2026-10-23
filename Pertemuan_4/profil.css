@@ -1,0 +1,69 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#profil {
+    width: 400px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    text-align: center;
+}
+
+h1, h3 {
+    color: #1e3a8a;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.nama {
+    color: rgb(37, 99, 235);
+    font-size: 22px;
+}
+
+.jurusan {
+    color: #64748b;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#profil p {
+    line-height: 1.6;
+}
+
+.deskripsi {
+    text-align: justify;
+}
+
+.keahlian {
+    display: inline-block;
+    margin: 4px;
+    padding: 5px 12px;
+    background-color: rgba(37, 99, 235, 0.1);
+    color: #1e3a8a;
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+}
+
+.tombol {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
