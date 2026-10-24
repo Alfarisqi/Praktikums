@@ -29,8 +29,9 @@ h1 {
 
 /* Latihan_3: Box model, border, dan background */
 .kartu {
+    box-sizing: border-box;
     width: 360px;
-    margin: 40px auto;
+    margin: 40px 0 auto;
     padding: 24px;
     background-color: #ffffff;
     border: 2px solid #cbd5e1;
@@ -39,7 +40,7 @@ h1 {
 
 /* Latihan_4: Display dan tombol */
 .tombol {
-    display: inline-block;
+    display: block;
     margin-top: 12px;
     padding: 10px 20px;
     background-color: #2563eb;
